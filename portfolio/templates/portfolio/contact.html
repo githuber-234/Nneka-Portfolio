@@ -1,0 +1,62 @@
+{% extends "portfolio/base.html" %} {% load static %} {% block content %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'portfolio/contact.css' %}"
+/>
+<section class="contact">
+  <div class="contact-left">
+    <form method="POST">
+      {% csrf_token %}
+      <div class="contact-form-head">
+        <h2 class="contact-header">Contact Me</h2>
+      </div>
+      {{ contact_form.as_p }}
+      <button class="contact-btn" name="contact_submit" type="submit">
+        Submit
+      </button>
+    </form>
+  </div>
+  <div class="contact-right">
+    <h2 class="contact-header">My Socials</h2>
+    <a href="mailto:getvbaysolutions@gmail.com" class="contact-item">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+    <a href="tel:+2348055811185" class="contact-item">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+    <a
+      href="https://www.facebook.com/venussbay"
+      class="contact-item"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fa-brands fa-facebook-f"></i>
+    </a>
+    <a
+      href="https://twitter.com/venussbay"
+      class="contact-item"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fa-brands fa-twitter"></i>
+    </a>
+    <a
+      href="https://www.instagram.com/vbaysolutions"
+      class="contact-item"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fa-brands fa-square-instagram"></i>
+    </a>
+    <a
+      href="https://venussbay.blogspot.com"
+      class="contact-item"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fa-solid fa-blog"></i>
+    </a>
+  </div>
+</section>
+{% endblock %}

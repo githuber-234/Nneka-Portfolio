@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nneka's Portfolio</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'portfolio/main.css' %}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1 class="logo">Nneka's<span class="logo-span"> Portfolio</span></h1>
+
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'services' %}">Services</a>
+        <a href="{% url 'projects' %}">Projects</a>
+        <a href="{% url 'testimonial' %}">Testimonials</a>
+        <a href="{% url 'contact' %}">Contact</a>
+      </nav>
+    </header>
+    <div class="mobile-nav hidden" id="mobile-nav">
+      <a href="{% url 'about' %}">About</a>
+      <a href="{% url 'services' %}">Services</a>
+      <a href="{% url 'projects' %}">Projects</a>
+      <a href="{% url 'testimonial' %}">Testimonials</a>
+      <a href="{% url 'contact' %}">Contact</a>
+    </div>
+    <div class="main-content">{% block content %}{% endblock %}</div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section-links">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="{% url 'about' %}">About</a></li>
+              <li><a href="{% url 'services' %}">Services</a></li>
+              <li><a href="{% url 'projects' %}">Projects</a></li>
+              <a href="{% url 'contact' %}">Contact</a>
+            </ul>
+          </div>
+          <div class="footer-section-contact">
+            <h2>Contact Me</h2>
+            <p>
+              <i class="fa-solid fa-envelope"></i> nnekaa@live.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> +234 805 581 1185</p>
+          </div>
+          <div class="footer-section-socials">
+            <h2>Follow Me</h2>
+            <a
+              href="https://twitter.com/venussbay"
+              class="icon-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/venussbay"
+              class="icon-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/vbaysolutions"
+              class="icon-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; Nnekaportfolio | All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const mobileNav = document.getElementById("mobile-nav");
+
+      toggle.addEventListener("click", () => {
+        mobileNav.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

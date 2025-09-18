@@ -1,0 +1,45 @@
+.services {
+  padding: 2rem;
+  background-color: #fef6ff;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.services h2 {
+  color: #a64ac9;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.services ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+
+.services li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+.text-header {
+  color: #ffb84d;
+}
+
+li {
+  list-style: none;
+}
+
+.service-image {
+  width: 100%;
+  max-width: 90vw;
+  height: 55vh;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+.top-content,
+.content {
+  text-align: left;
+}

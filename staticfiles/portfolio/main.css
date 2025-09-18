@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  font-family: "Poppins", 'Segoe UI', sans-serif;
+  background-color: #fff0f6;
+  color: #a64ac9;;
+}
+
+.logo-span {
+  color: #a64ac9;
+}
+
+.site-header {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #9b2c9c;
+}
+
+.menu-toggle {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  padding: 1rem 2rem;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 0;
+  font-weight: 500;
+}
+
+.mobile-nav a:hover {
+  color: #9b2c9c;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+.main-content {
+  padding: 2rem;
+  background-color: #ffffff;
+  min-height: 70vh;
+  color: #333;
+}
+
+/* Footer */
+.footer {
+  background-color: #fff0f6;
+  color: #333;
+  padding: 2rem 1rem;
+}
+
+.footer .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-section-links,
+.footer-section-contact,
+.footer-section-socials {
+  flex: 1 1 200px;
+}
+
+.footer h2 {
+  color: #a64ac9;
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer a {
+  color: #6a0572;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffde59;
+}
+
+.footer-section-contact p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.footer-section-contact i,
+.footer-section-socials i {
+  margin-right: 0.5rem;
+  color: #e6739f;
+}
+
+.footer-section-socials .icon-link {
+  margin-right: 10px;
+  font-size: 1.3rem;
+  display: inline-block;
+  color: #6a0572;
+  transition: color 0.3s ease;
+}
+
+.footer-section-socials .icon-link:hover {
+  color: #d9a8ff;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+  color: #777;
+}
