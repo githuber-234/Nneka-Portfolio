@@ -10,12 +10,17 @@
   margin-bottom: 1rem;
 }
 
+.services-span {
+  color: black;
+  margin-bottom: 2rem;
+}
+
 .content {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 0.2rem;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 #btn1,
@@ -35,6 +40,7 @@
   cursor: pointer;
   transition: transform 0.2s ease;
   width: 100%;
+  height: 60px;
 }
 
 button:hover {
@@ -49,21 +55,17 @@ button:hover {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow-y: auto;
-  background-color: rgba(0,0,0,0.6);
-  padding: 2rem;
-  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-body {
-  background: #fff;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 16px;
-  max-width: 700px;
-  width: 100%;
-  animation: fadeIn 0.3s ease;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  background-color: #fff;
+  margin: 1% auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  position: relative;
 }
 
 .modal-body h2 {
