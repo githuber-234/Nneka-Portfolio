@@ -17,3 +17,16 @@ li {
 .content {
   text-align: left;
 }
+
+.projects a {
+  display: inline-block;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  color: #a64ac9;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.projects a:hover {
+  text-decoration: underline;
+}

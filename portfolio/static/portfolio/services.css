@@ -1,7 +1,6 @@
 .services {
   padding: 2rem;
-  background-color: #fef6ff;
-  margin-bottom: 2rem;
+  background: #fef6ff;
   text-align: center;
 }
 
@@ -11,35 +10,113 @@
   margin-bottom: 1rem;
 }
 
-.services ul {
-  list-style: disc inside;
-  padding-left: 1rem;
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.services li {
-  margin-bottom: 0.75rem;
+#btn1,
+#btn2,
+#btn3,
+#btn4,
+#btn5,
+#btn6,
+#btn7 {
+  background: #a64ac9;
+  color: #fff;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  width: 100%;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgba(0,0,0,0.6);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.modal-body {
+  background: #fff;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 700px;
+  width: 100%;
+  animation: fadeIn 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.modal-body h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #a64ac9;
+}
+
+.modal-content {
   font-size: 1rem;
   color: #444;
+  line-height: 1.6;
 }
 
-.text-header {
-  color: #ffb84d;
+.close-btn {
+  float: right;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
 }
 
-li {
-  list-style: none;
+.close-btn:hover {
+  color: #000;
 }
 
-.service-image {
-  width: 100%;
-  max-width: 90vw;
-  height: 55vh;
-  object-fit: cover;
-  border-radius: 16px;
-  display: block;
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-.top-content,
-.content {
-  text-align: left;
+@media (max-width: 768px) {
+  .btn-text h2 {
+    font-size: 1rem;
+  }
+
+  .modal-body {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services h2 {
+    font-size: 1.5rem;
+  }
+
+  .modal-body {
+    width: 100%;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  .btn-text h2 {
+    font-size: 0.95rem;
+  }
 }

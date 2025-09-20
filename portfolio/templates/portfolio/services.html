@@ -6,73 +6,172 @@
 />
 <section class="services">
   <h2>My Services</h2>
-  <div class="top-content">
-    <ul>
-      <li><strong class="text-header">- Strategic Communication Consulting</strong></li>
-      <li><strong class="text-header">- Nonprofit (NGO) Support</strong></li>
-      <li><strong class="text-header">- Digital Storytelling & Visibility</strong></li>
-      <li><strong class="text-header">- Youth Mentorship & AI/Cyberspace Ethics</strong></li>
-      <li><strong class="text-header">- Workshops & Training</strong></li>
-      <li><strong class="text-header">- Speaking Engagements</strong></li>
-    </ul>
-  </div>
   <div class="content">
-    <h4>Descriptions</h4>
-    <span>
-      <strong class="text-header">Strategic Communication Consulting:</strong>
+    <button type="submit" id="btn1">Strategic Communication Consulting</button
+    ><br />
+    <button type="submit" id="btn2">Nonprofit (NGO) Support</button><br />
+    <button type="submit" id="btn3">Digital Storytelling & Visibility</button
+    ><br />
+    <button type="submit" id="btn4">Web Development</button><br />
+    <button type="submit" id="btn5">
+      Youth Mentorship & AI/Cyberspace Ethics</button
+    ><br />
+    <button type="submit" id="btn6">
+      Cultural Heritage and Creative Industries</button
+    ><br />
+    <button type="submit" id="btn7">Speaking Engagements</button>
+  </div>
+</section>
+<div id="1Modal" class="modal">
+  <div class="modal-body">
+    <span class="close-btn">&times;</span>
+    <h2><b>Strategic Communication Consulting</b></h2>
+    <div class="modal-content">
       Organizations, leaders, and changemakers seeking clarity, consistency, and
       influence in their communications, can elevate their messaging with
       tailored strategies that align their voice, values, and vision across
-      platforms and stakeholders.<br />
+      platforms and stakeholders.<br /><br />
       <strong class="text-header">Benefits:</strong><br />
       Strengthened brand identity, improved stakeholder engagement, and driving
       measurable impact through strategic storytelling and positioning.<br />
-      <a href="#">Book a Consultation</a><br /><br />
-      <strong class="text-header">Nonprofit (NGO) Support:</strong> Empowering
-      mission-driven organizations with tools, strategies, and systems to
-      amplify their work and deepen community engagement. This is for Local and
-      international NGOs, grassroots initiatives, and social enterprises
-      navigating growth, visibility, or operational challenges.<br />
-      <strong class="text-header">Benefits:</strong> Enhanced program delivery,
-      improved donor engagement, and sustainable organizational development.<br />
-      <a href="#"> Book a Consultation</a><br /><br />
-      <strong class="text-header">Digital Storytelling & Visibility:</strong>
+      <a href="{% url 'contact' %}">Book a Consultation</a><br /><br />
+    </div>
+  </div>
+</div>
+<div id="2Modal" class="modal">
+  <div class="modal-body">
+    <span class="close-btn">&times;</span>
+    <h2><b>Nonprofit (NGO) Support</b></h2>
+    <div class="modal-content">
+      Empowering mission-driven organizations with tools, strategies, and
+      systems to amplify their work and deepen community engagement. This is for
+      Local and international NGOs, grassroots initiatives, and social
+      enterprises navigating growth, visibility, or operational challenges.<br /><br />
+      <strong class="text-header">Benefits:</strong><br />
+      Enhanced program delivery, improved donor engagement, and sustainable
+      organizational development.<br />
+      <a href="{% url 'contact' %}"> Book a Consultation</a><br /><br />
+    </div>
+  </div>
+</div>
+<div id="3Modal" class="modal">
+  <div class="modal-body">
+    <span class="close-btn">&times;</span>
+    <h2><b>Digital Storytelling & Visibility</b></h2>
+    <div class="modal-content">
       Are you into advocacy campaigns, are you creatives, or organizations ready
       to build authentic online presence and drive engagement? Transform your
       narrative into compelling digital content that resonates, inspires, and
-      mobilizes your audience.<br />
-      <strong class="text-header">Benefits:</strong> Stronger brand recognition,
-      increased reach, and deeper emotional connection with your community.<br />
-      <a href="#">Book a Consultation</a><br /><br />
-      <strong class="text-header"
-        >Youth Mentorship & AI/Cyberspace Ethics:</strong
-      >
+      mobilizes your audience.<br /><br />
+      <strong class="text-header">Benefits:</strong><br />
+      Stronger brand recognition, increased reach, and deeper emotional
+      connection with your community.<br />
+      <a href="{% url 'contact' %}">Book a Consultation</a><br /><br />
+    </div>
+  </div>
+</div>
+<div id="4Modal" class="modal">
+  <div class="modal-body">
+    <span class="close-btn">&times;</span>
+    <h2><b>Web Development</b></h2>
+    <div class="modal-content">
+      Web Development is the process of building and maintaining websites or web
+      applications. It covers everything from design (front-end) to
+      functionality (back-end) and deployment.<br /><br />
+      <strong class="text-header">Benefits:</strong><br />
+      - Global visibility and accessibility<br />
+      - Improved customer engagement and support<br />
+      - Business growth through online presence<br />
+      - Automation of services and processes<br />
+      <a href="{% url 'contact' %}">Book a Consultation</a><br /><br />
+    </div>
+  </div>
+</div>
+<div id="5Modal" class="modal">
+  <div class="modal-body">
+    <span class="close-btn">&times;</span>
+    <h2><b>Youth Mentorship & AI/Cyberspace Ethics</b></h2>
+    <div class="modal-content">
       Guiding young minds to navigate digital spaces responsibly, while
       fostering leadership, ethics, and critical thinking in the age of AI. For
       schools, youth organizations, and parents committed to preparing the next
-      generation for ethical tech engagement.<br />
-      <strong class="text-header">Benefits:</strong> Empowered youth with
-      digital literacy, ethical awareness, and confidence to lead in tech-driven
-      environments.<br />
-      <a href="#">Book a Consultation</a><br /><br />
-      <strong class="text-header">Workshops & Training:</strong> Interactive,
-      transformative sessions designed to build capacity, spark innovation, and
-      equip teams with practical tools. Designed for corporations, government
-      agencies, nonprofits, educators, and community leaders seeking hands-on
-      learning experiences.<br />
-      <strong class="text-header">Benefits:</strong>Improved team performance,
-      actionable skills, and renewed motivation to implement change.<br />
-      <a href="#">Book a Consultation</a><br /><br />
-      <strong class="text-header">Speaking Engagements:</strong>Dynamic,
-      thought-provoking talks that inspire, motivate, educate, and challenge
-      audiences to think differently and act boldly. The speaking engagements
-      are suitable for conferences, panels, schools, and organizations looking
-      for impactful voices on leadership, ethics, communication, or tech.<br />
-      <strong class="text-header">Benefits:</strong> Audience engagement, fresh
-      perspectives, and memorable moments that spark dialogue and
-      transformation.<br />
-      <a href="#">Book a Consultation</a>
-    </span>
+      generation for ethical tech engagement.<br /><br />
+      <strong class="text-header">Benefits:</strong><br />
+      Empowered youth with digital literacy, ethical awareness, and confidence
+      to lead in tech-driven environments.<br />
+      <a href="{% url 'contact' %}">Book a Consultation</a><br /><br />
+    </div>
   </div>
-</section>
+</div>
+<div id="6Modal" class="modal">
+  <div class="modal-body">
+    <span class="close-btn">&times;</span>
+    <h2><b>Cultural Heritage and Creative Industries</b></h2>
+    <div class="modal-content">
+      This service helps individuals, communities, and organizations preserve
+      cultural heritage and develop creative industries. It includes providing
+      business consulting for creative professionals and organizations, and
+      offering training and advocacy. The goal is to use cultural heritage and
+      creativity to drive economic growth, strengthen communities, and promote
+      cross-cultural understanding.
+      <br /><br />
+      <strong class="text-header">Benefits:</strong><br />
+      - Heritage preservation for future generations.<br />
+      - Business guidance to turn creative skills into a sustainable career.<br />
+      - Economic opportunities to foster local pride through cultural assets.<br />
+      - Connecting locally and globally with others.
+      <a href="{% url 'contact' %}">Book a Consultation</a><br /><br />
+    </div>
+  </div>
+</div>
+<div id="7Modal" class="modal">
+  <div class="modal-body">
+    <span class="close-btn">&times;</span>
+    <h2><b>Speaking Engagements</b></h2>
+    <div class="modal-content">
+      Dynamic, thought-provoking talks that inspire, motivate, educate, and
+      challenge audiences to think differently and act boldly. The speaking
+      engagements are suitable for conferences, panels, schools, and
+      organizations looking for impactful voices on leadership, ethics,
+      communication, or tech.<br /><br />
+      <strong class="text-header">Benefits:</strong><br />
+      Audience engagement, fresh perspectives, and memorable moments that spark
+      dialogue and transformation.<br />
+      <a href="{% url 'contact' %}">Book a Consultation</a><br /><br />
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Map buttons to modals by number (btn1 -> 1Modal, etc.)
+    const buttons = document.querySelectorAll("button[id^='btn']");
+    const modals = document.querySelectorAll(".modal");
+
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const num = btn.id.replace("btn", ""); // get number
+        const modal = document.getElementById(num + "Modal");
+        if (modal) {
+          modal.style.display = "block";
+        }
+      });
+    });
+
+    // Close when clicking the close (×)
+    document.querySelectorAll(".close-btn").forEach((close) => {
+      close.addEventListener("click", () => {
+        close.closest(".modal").style.display = "none";
+      });
+    });
+
+    // Close when clicking outside the modal body
+    window.addEventListener("click", (e) => {
+      modals.forEach((modal) => {
+        if (e.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    });
+  });
+</script>
 {% endblock %}
