@@ -9,7 +9,7 @@
     <form method="POST">
       {% csrf_token %}
       <div class="contact-form-head">
-        <h2 class="contact-header">Contact Me</h2>
+        <h2 class="contact-header">Contact Us</h2>
       </div>
       {{ contact_form.as_p }}
       <button class="contact-btn" name="contact_submit" type="submit">
@@ -18,7 +18,7 @@
     </form>
   </div>
   <div class="contact-right">
-    <h2 class="contact-header">My Socials</h2>
+    <h2 class="contact-header">Socials</h2>
     <a href="mailto:getvbaysolutions@gmail.com" class="contact-item">
       <i class="fa-solid fa-envelope"></i>
     </a>
@@ -60,3 +60,4 @@
   </div>
 </section>
 {% endblock %}
+
