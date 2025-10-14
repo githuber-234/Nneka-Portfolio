@@ -5,16 +5,20 @@
   href="{% static 'portfolio/services.css' %}"
 />
 <section class="services">
-  <h2>Services</h2>
+  <div class="heading">
+    <h2>Services</h2>
+  </div>
   <div class="content">
-    <button type="submit" id="btn1">Strategic Communication Consulting</button>
+    <button type="submit" id="btn1">Strategic Communication</button>
     <button type="submit" id="btn2">Nonprofit (NGO) Support</button>
     <button type="submit" id="btn3">Digital Storytelling & Visibility</button>
     <button type="submit" id="btn4">Web Development</button>
     <button type="submit" id="btn5">
-      Youth Mentorship & AI/Cyberspace Ethics</button>
+      Youth Mentorship & AI/Cyberspace Ethics
+    </button>
     <button type="submit" id="btn6">
-      Cultural Heritage and Creative Industries</button>
+      Cultural Heritage and Creative Industries
+    </button>
     <button type="submit" id="btn7">Speaking Engagements</button>
   </div>
 </section>
@@ -127,8 +131,12 @@
       <strong class="text-header">Benefits:</strong><br />
       <ul>
         <li>Heritage preservation for future generations.</li>
-        <li>Business guidance to turn creative skills into a sustainable career.</li>
-        <li>Economic opportunities to foster local pride through cultural assets.</li>
+        <li>
+          Business guidance to turn creative skills into a sustainable career.
+        </li>
+        <li>
+          Economic opportunities to foster local pride through cultural assets.
+        </li>
         <li>Connecting locally and globally with others.</li>
       </ul>
       <a href="{% url 'contact' %}">Book a Consultation</a><br /><br />
@@ -186,7 +194,3 @@
   });
 </script>
 {% endblock %}
-
-
-
-
