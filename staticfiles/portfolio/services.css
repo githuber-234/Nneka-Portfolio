@@ -1,13 +1,26 @@
 .services {
-  padding: 2rem;
   background: #fef6ff;
   text-align: center;
+  padding: 2rem;
 }
 
-.services h2 {
+.heading {
+  background-image: url(../portfolio/images/services.jpg);
+  background-size: cover !important;
+  background-position: center !important;
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading h2 {
   color: #a64ac9;
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3);
 }
 
 .content {
@@ -146,6 +159,3 @@ button:hover {
     padding: 1rem;
   }
 }
-
-
-

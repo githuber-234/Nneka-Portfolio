@@ -5,7 +5,19 @@
   text-align: center;
 }
 
-.testimonials h2 {
+.heading {
+  background-image: url(../portfolio/images/testimonials.jpg);
+  background-size: cover !important;
+  background-position: center !important;
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading h2 {
   color: #a64ac9;
   font-size: 1.8rem;
   margin-bottom: 1rem;
