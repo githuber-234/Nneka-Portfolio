@@ -5,7 +5,7 @@
 }
 
 .heading {
-  background-image: url(../portfolio/images/projects.jpg);
+  background-image: url(../portfolio/images/t.jpg);
   background-size: cover !important;
   background-position: center !important;
   padding-top: 1rem;
@@ -30,6 +30,13 @@ li {
   text-align: left;
 }
 
+.content ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 100px);
+  gap: 8px;
+}
+
 .projects a {
   display: inline-block;
   word-break: break-word;
@@ -45,4 +52,13 @@ li {
 
 .project-image {
   width: 100px;
+}
+
+@media (max-width: 600px) {
+  .content ul {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 100px);
+    gap: 0.7rem;
+    max-width: 100%;
+  }
 }
