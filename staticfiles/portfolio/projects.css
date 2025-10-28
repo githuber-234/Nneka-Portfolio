@@ -5,7 +5,7 @@
 }
 
 .heading {
-  background-image: url(../portfolio/images/t.jpg);
+  background-image: url(../portfolio/images/testimonials.jpg);
   background-size: cover !important;
   background-position: center !important;
   padding-top: 1rem;
@@ -62,3 +62,4 @@ li {
     max-width: 100%;
   }
 }
+
