@@ -1,6 +1,8 @@
 .about {
   padding: 3rem 1rem;
-  background: #f9f9f9;
+  background-image: url(../portfolio/images/banner.jpg);
+  background-size: cover !important;
+  background-position: center !important;
 }
 
 .about-container {
@@ -36,7 +38,7 @@
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.2rem;
-  color: #444;
+  color: white;
 }
 
 .about-text a {
